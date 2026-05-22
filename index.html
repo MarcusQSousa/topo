@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #303030;
+        }
+        #canvas{
+            border: 2px solid grey;
+            width: 100%;
+            height: 100%;
+        }
+
+        form * {
+            display: block;
+        }
+        #lista{
+            display: flexbox;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <label for="fs">Fs</label>
+        <input type="number" step="any" name="fs" id="fs" required >
+
+        <label for="fm">Fm</label>
+        <input type="number" step="any" name="fm" id="fm" required>
+
+        <label for="fi">Fi</label>
+        <input type="number" step="any" name="fi" id="fi" required>
+
+        <label for="av">A V</label>
+        <input type="number" step="any" name="av" id="av" required>
+
+        <label for="ah">A H</label>
+        <input type="number" step="any" name="ah" id="ah" required>
+
+        <button type="submit">Novo ponto</button>
+    </form>
+    <canvas id="canvas"></canvas>
+    <dir id="lista">
+
+    </dir>
+
+</body>
+<script src="script.js" defer></script>
+</html>
